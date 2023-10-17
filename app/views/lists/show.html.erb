@@ -9,7 +9,7 @@
   <%= image_tag @list.image, size: "300x300" %>
 <% else %>
   <%= image_tag 'no_image', size: "300x300" %>
-
+<% end %>
 
 
 <%= link_to "編集", edit_list_path(@list.id) %>
