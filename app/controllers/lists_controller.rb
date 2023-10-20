@@ -23,7 +23,7 @@ class ListsController < ApplicationController
     if @list.save
       redirect_to list_path(@list.id)
     else
-      render :new
+      redirect_to new_list_path # renderではなくredirect_toだった場合
     end
   end
 
